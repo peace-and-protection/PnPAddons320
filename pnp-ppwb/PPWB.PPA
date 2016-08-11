@@ -1,0 +1,27 @@
+[addon]
+name=Whiteboard
+author=Karla Little (misspai)
+version=1.00
+url=http://pairc.com/pnp/
+email=pnp@pairc.com
+code=whiteboard
+id=ppwb
+ppver=3.14
+vars=%ppwb.* %ppwbs.*
+help=wbhelp
+[files]
+1=ppwb1.mrc
+2=ppwb2.mrc
+[notes]
+1=This is a neat little addon that allows multiple users to
+2=draw on a "shared whiteboard". Whatever one user draws on
+3=the board, all other users will see. Users can connect
+4=directly to each other, or run the whiteboard via CTCP on
+5=a channel. A large number of tools and options are
+6=available, including loading BMPs, a seperate chat window,
+7=and the ability of the server to kick and ban users from
+8=the whiteboard.
+9=-
+10=Please read the help (select from P&P Tools -> WhiteBoard)
+11=for details on using the whiteboard in it's various modes
+12=and some important notes.

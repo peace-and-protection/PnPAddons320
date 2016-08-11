@@ -1,0 +1,48 @@
+SpellCheck 1.00 (for P&P 3.20 or higher)
+---------------
+I loosely based this addon off of input21.mrc by CodeRx.
+(all the code is mine, however.) It basically checks whatever
+you say in a channel, chat, or query for common mistakes in
+spelling. The default dictionary handles a few common mistakes.
+As you make new ones, use the /word command or popups (in
+the P&P menu) to add them to the dictionary.
+
+The popups are pretty self-explanitory, but I will explain
+them anyways-
+
+Add word: Allows you to enter a misspelled word, and the
+          correct version, then adds it to the dictionary.
+          Also can be done via /word (incorrect) (correct)
+
+Remove word: Allows you to remove a word from the spelling
+             dictionary. Also can be done via /word -r (word)
+
+On: Enable SpellCheck.
+Off: Disable SpellCheck.
+
+The remaining options tell SpellCheck what to do if errors are
+found.
+
+Tell me corrections made:
+     If errors are found, they are listed. The corrected text
+     is said in the window as normal.
+
+Make corrections silently:
+     If errors are found, they are corrected in the said text,
+     but nothing special is shown to you.
+
+Full halt if any errors:
+     If errors are found, they are listed, and NOTHING is said
+     in the channel or query/chat. You must correct them manually
+     (or change the dictionary, or turn off SpellCheck) to output
+     the text.
+
+Notes
+-----
+This addon will not spell check text that IRCrypt encrypts. It will
+not work with nick completion- if you make a spelling error, it will
+be corrected, and nick completion (or click n color) will not be
+activated.
+
+This WILL spell check 'around' punctuation, color codes, etc. as long
+as they are not embedded in the middle of the word.

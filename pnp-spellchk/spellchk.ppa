@@ -1,0 +1,19 @@
+[addon]
+name=SpellCheck
+author=misspai
+version=1.00
+url=http://pairc.com/pnp/
+email=pnp@pairc.com
+code=SpellCheck
+id=pp-spellchk
+ppver=3.20
+unload=schkunload
+help=schkhelp
+[files]
+1=spellchk.mrc
+[notes]
+1=This is a simple addon that will correct commonly
+2=misspelled words. You can add or remove words that
+3=are corrected, enable or disable the addon, and
+4=set it to three levels of 'warnings' for misspelled
+5=words.

@@ -1,0 +1,24 @@
+[addon]
+name=IRCrypt (P&P version)
+author=Karla Little (misspai)
+version=1.00
+url=http://pairc.com/pnp/
+email=pnp@pairc.com
+code=ircrypt
+id=ircrypt1
+ppver=3.14
+config=cryptcfg
+help=crypt
+vars=%crypt.*
+[files]
+1=ircrypt.mrc
+[notes]
+1=This addon contains easy to use IRC encryption tools, far
+2=advanced beyond most simple IRC encryption scripts. Keys
+3=can be any length and of almost limitless variety, and
+4=can differ for each channel/nickname. See help in popups
+5=for details on using IRCryption.
+6=-
+7=A version of IRCrypt is available for mIRC that does
+8=not require P&P, so that your friends do not need to
+9=get P&P in order to use it.

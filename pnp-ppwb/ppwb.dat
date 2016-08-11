@@ -1,0 +1,144 @@
+Quick start-
+In most cases, the whiteboard will be used by having one user setup a whiteboard "server"
+and all other users connecting to that whiteboard.  To start a whiteboard server, type
+/wb.  To connect to another user's server, type /wb nick or /wb IP, giving the nickname
+or address (IP or named host) of the user.  Once connected, you can select tools and colors
+from the right, draw in the drawing area, and chat in the chat window. (if it does not open
+automatically, select *Chat/Users* to open it.) Close the whiteboard window and you will
+disconnect automatically.
+ 
+Popups-
+A small menu of popups has been added to the P&P Tools menu to quickly start up the
+whiteboard. You can choose to start it in server mode, connect to someone else, start it
+up in a channel, or start it up locally only, as well as a few other options.
+ 
+Details on ports-
+By default, the whiteboard is on port 5050.  You can open a whiteboard server on a different
+port by using /wb port, and connect to a server on a different port by using /wb nick/IP port.
+You probably don't need to use a different port, but this is available just in case it is needed.
+ 
+Running in a channel-
+The whiteboard has a special mode where you can run it "in" a channel. Instead of sending
+the whiteboard data via a special connection, it will be sent via CTCP to the entire channel.
+If IRC lag is not a concern, this is a good way to run a whiteboard for more than a few users.
+ 
+To activate this mode, type /wb #channel. Note that the whiteboard will refuse to run in this
+mode unless you are on the channel and it either has [whiteboard] in the topic or the mode
++l 5050 set. (a limit of 5050) This prevents random users from sending a lot of whiteboard junk
+to channels without permission of the ops to run whiteboards first.
+ 
+Local mode-
+If you just want to fool around with the whiteboard without connecting or accepting connections,
+you can type /wb 0 or /wb local to start it in local mode. This mode will also be switched to
+automatically if you are disconnected from the whiteboard server.
+ 
+Details on tools-
+The freehand tool allows you to draw, well, freehand.  The lines tool allows you to draw
+straight lines- Click where you want to start the line and drag to where you wish to end the
+line, then let go.  The line series tool allows you to draw lots of connected lines- Click to start,
+then click at each line end point.  Double-click to place the final line.
+ 
+The rectangle and box tools draw filled and hollow rectangles- Click at one corner, and drag
+to where you want the other corner, then let go.  The ellipse and doughnut tools draw
+filled and hollow ellipses/circles- Just like the rectangles, drag from one corner to the other
+and release.  The doughnut will always draw in "inverse" due to mIRC limitations.
+ 
+Fill allows you to fill an enclosed area with the current color, and text writes text at the
+position you click at.
+ 
+Tool options-
+If you have inverse on, most tools (excepting freehand and line series) will draw in "inverse",
+which will "reverse" anything it draws over.  Try it and see.  Doughnuts always draw in
+"inverse" due to mIRC limitations.
+ 
+The width setting can be used to change the size of lines and hollow objects; you can
+increase or decrease it by one using the menu or right-click and select any width from
+the popup menu.
+ 
+The color can be changed to any of the built in colors or selected from a custom color
+menu.  The built in colors will ALWAYS use the mIRC default colors, even if you have
+changed them in your copy of mIRC.  This is to ensure that your drawings look the same
+for all whiteboard users.
+ 
+Other neat things in the popups- (including BMP support)
+If you right-click in the whiteboard, you can select from a lot of options and settings. From
+here you can clear the whiteboard or fill it with the current color.  You can also load a
+picture.  The other users will ONLY see this picture IF they also have that file in either
+their mIRC directory, download directory, or a special pictures directory they have defined.
+(you can define the pictures directory in the settings submenu.)
+ 
+Chat and userlist window-
+Selecting *Chat/Users* from the whiteboard will open the chat and userlist window. It
+will also open automatically if anyone says something in it and it isn't already open. Here
+you can see who is on the whiteboard at a glance, and send messages and actions just
+like in a normal IRC channel, for all whiteboard users to see.
+ 
+You can select a nickname and right-click for a few options, such as whois'ing the user
+on IRC, or kicking/banning the user from the whiteboard IF you are running the server.
+ 
+Settings-
+A large number of settings can be configured by right-clicking in the whiteboard and
+selecting the settings submenu.
+ 
+The Redraw setting determines how the whiteboard is drawn. "Smooth" draws it
+with as little flicker as possible, but is slower. "Fast" draws objects faster but may
+flicker noticeably.
+ 
+You can change the font and size used for the Text tool here, as well as turn bold on or
+off.
+ 
+You can change some settings related to the chat/userlist box, such as whether it opens
+automatically when you start the whiteboard, whether users entering and exiting the
+whiteboard are shown "joining" and "parting", and what special colors to use for the
+nicknames of the server and yourself. (just to highlight them in the userlist.)
+ 
+You can set the whiteboard windows to be opened as desktop windows if you prefer this
+type of window. Changes to this setting don't take affect until the whiteboard is restarted.
+ 
+Finally, you can change the directory that is searched for BMP pictures, in addition to
+your download and mIRC directories.
+ 
+If you are the server, you can also change an additional setting in the Server submenu.
+Here you can limit connections to the whiteboard.  You can allow all connections, no new
+connections, or limit the user count to a certain number of users. (for example, you could
+set it so that no more than 5 total users could connect to the whiteboard at one time. This
+could be used to limit bandwidth usage, etc.) The user limit does not count you in the
+number of users.
+ 
+Sizing concerns-
+Obviously, different users have different sized screens. If someone draws outside of the
+size of another user's window, they won't see it.
+ 
+The main whiteboard window ALWAYS opens up at a set size for this reason, a bit
+smaller than the main mIRC window on a 800x600 resolution. You can resize it if you
+like, however all users should agree beforehand how big to make it. The best way would
+be to have the user with the smallest resolution size it to their taste, then draw a rectangle
+at the edges so the other users know where the limits are.
+ 
+If needed, the server can use the options in the whiteboard popups under
+Server -> Size Limit to "force" all current users' and new users' windows to be the same
+size as the server's current window. After this change however, the users can freely
+resize the window again.
+ 
+Bandwidth/flooding concerns-
+The basic connection mode of the whiteboard should not be burden on your bandwidh
+as the data sent and received is relatively small. The whiteboard server will experience
+a greater load as it has to re-relay all data it receives from one user to all other users.
+ 
+If only two or three total users are connected, bandwidth will not be a problem. If a larger
+number of users are connected you may notice lag in drawing, especially if the server
+is only a standard dialup connection. If possible, try to get someone on a high speed
+line (ISDN, cable modem, etc.) to be the whiteboard server if you plan on having a large
+number of connections.
+ 
+If you run the whiteboard in a channel, obviously a much larger number of users can be
+easily supported. mIRC's built-in flood protection combined with some special measures
+taken by the whiteboad SHOULD prevent anyone from flooding off due to sending
+whiteboard information, however users should still be careful when using the freehand
+feature due to the large amount of info it sends. The CTCPs sent by the whiteboard
+have little chance of affecting users not connected to the whiteboard.
+ 
+Color concerns-
+The whiteboard works best under 16 bbp (65535 colors) or higher depths of colors. Anything
+less (such as a 256 color mode) will display dithered colors when you fill or use many other
+tools, which not only looks worse but may cause problems when trying to fill over them.

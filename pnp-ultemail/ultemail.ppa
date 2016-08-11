@@ -1,0 +1,27 @@
+[addon]
+name=The Ultimate E-Mail Script
+author=Karla Little (misspai)
+version=1.21
+url=http://pairc.com/pnp/
+email=pnp@pairc.com
+code=pp.mail
+id=paimail1
+ppver=3.14
+vars=%email.* %^email.*
+config=ecfg
+unload=_emunload
+help=help ! e-mail system
+[files]
+1=uemail1.mrc
+2=uemail2.mrc
+[notes]
+1=This addon represents what I feel is easily the best e-mail script in existence. It's easy to use, supports any number of accounts, any number of address books/mailing lists, full carbon copy features, and a fairly easy to use e-mail editor. 
+2=With this installed I only use a regular e-mail client if I need to download an attached file, because thats about the only thing not supported.
+3=To use it, simply browse the "e-mail" popups under the PnP tools menu. You can also use F4 as a shortcut to check mail or send the current e-mail. Help for this addon is included in the main PnP help file.
+4=New in 1.20 since 1.02-
+5=* Uses sockets instead of DCC for cleaner, faster, and more transparent operation.
+6=* Option to keep e-mails minimized as you d/l them.
+7=* F3 will cycle through e-mail windows if any are open.
+8=* A few bugs and incompatibilities with certain servers fixed.
+9=* If you now have new problems with your e-mail server, enable the new option "send only line feeds" to see if that fixes it.
+10=* Option for e-mail check to show new message count in titlebar of mIRC.

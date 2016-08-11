@@ -1,0 +1,21 @@
+[addon]
+name=Dice
+author=Karla Little (misspai)
+version=1.01
+url=http://infinite.nethosting.com/pai/
+email=michiru@earthlink.net
+code=pp.dice
+id=ddiiccee
+ppver=3.14
+vars=%dice.*
+config=dicecfg
+help=dicehelp
+[files]
+1=dice.mrc
+[notes]
+1=This script allows you to automatically (or on request) calculate dice rolls (5d6,
+2=etc.) or other equations automatically. It can automatically recognize them in
+3=other user's text, calculate on command, via alias or popup, and is highly
+4=configurable.
+5=-
+6=1.01 fixes a minor bug in 1.00 that prevented a couple of popups from working.
