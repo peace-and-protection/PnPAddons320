@@ -438,7 +438,7 @@ menu query {
 ; Configuration
 ; -----------------------------------------------------
 menu @IRCrypt {
-  dclick /_ccdbc
+  dclick:/_ccdbc
   Close window:window -c $active
 }
 alias ircryptcfg cryptcfg
